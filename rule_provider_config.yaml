@@ -10,6 +10,7 @@
 ;增强国外GFW：支持
 
 ;设置规则标志位
+ruleset=🏠 家庭网络,clash-domain:https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/N1_ipcidr.yaml
 ruleset=📲 Telegram,clash-domain:https://raw.githubusercontent.com/chinnsenn/ClashCustomRule/master/providers/Telegram_domain.yaml
 ruleset=📲 Telegram,clash-ipcidr:https://raw.githubusercontent.com/chinnsenn/ClashCustomRule/master/providers/Telegram_ipcidr.yaml,no-resolve
 ruleset=🎮 游戏平台,clash-domain:https://raw.githubusercontent.com/chinnsenn/ClashCustomRule/master/providers/Epic_domain.yaml
@@ -166,6 +167,8 @@ custom_proxy_group=🛑 广告拦截`select`[]REJECT`[]DIRECT
 custom_proxy_group=🍃 应用净化`select`[]REJECT`[]DIRECT
 custom_proxy_group=🆎 AdBlock`select`[]REJECT`[]DIRECT
 custom_proxy_group=🛡️ 隐私防护`select`[]REJECT`[]DIRECT
+custom_proxy_group=🏠 家庭网络`select`[]🇨🇳 N1节点`[]DIRECT
+custom_proxy_group=🇨🇳 N1节点`select`(N1)
 custom_proxy_group=🇬🇧 英国节点`select`(UK|英|伦敦)
 custom_proxy_group=🇩🇪 德国节点`select`(DE|德)
 custom_proxy_group=🇨🇦 加拿大节点`select`(CA|Canada|加拿大|枫)
