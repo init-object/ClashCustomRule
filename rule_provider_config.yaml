@@ -10,8 +10,8 @@
 ;增强国外GFW：支持
 
 ;设置规则标志位
-ruleset=🏠 家庭网络,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/N1_ipcidr.yaml,no-resolve
-ruleset=💼 办公网络,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_ipcidr.yaml,no-resolve
+ruleset=🏠 家庭网络,clash-ipcidr:https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/N1_ipcidr.yaml,no-resolve
+ruleset=💼 办公网络,clash-ipcidr:https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_ipcidr.yaml,no-resolve
 ruleset=💼 办公网络,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_domain.list
 ruleset=📹 EMBY,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/Emby.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
