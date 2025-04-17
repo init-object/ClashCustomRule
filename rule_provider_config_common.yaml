@@ -11,7 +11,7 @@
 
 ;设置规则标志位
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/zerotier.list,no-resolve
-ruleset=💼 办公网络,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_domain.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_domain.list
 ruleset=📹 EMBY,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/Emby.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
 ruleset=🛑 广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
