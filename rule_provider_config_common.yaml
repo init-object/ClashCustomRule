@@ -14,6 +14,7 @@ ruleset=🎯 全球直连,https://raw.githubusercontent.com/init-object/ClashCus
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_domain.list
 ruleset=📹 EMBY,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/Emby.list
 ruleset=💻 国外开发资源,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/dev.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/dev-mirror.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
 ruleset=🛑 广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
 ruleset=🍃 应用净化,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
