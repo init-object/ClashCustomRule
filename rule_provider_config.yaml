@@ -14,6 +14,7 @@ ruleset=🏠 家庭网络,clash-ipcidr:https://raw.githubusercontent.com/init-ob
 ruleset=💼 办公网络,clash-ipcidr:https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_ipcidr.yaml,no-resolve
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/zerotier.list,no-resolve
 ruleset=💼 办公网络,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_domain.list
+ruleset=🔯 故障转移,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/github_domain.yaml
 ruleset=📹 EMBY,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/Emby.list
 ruleset=💻 国外开发资源,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/dev.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/dev-mirror.list
