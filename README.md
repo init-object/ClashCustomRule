@@ -81,3 +81,66 @@ custom_proxy_group=节点选择`select`(^(?!.*(美国|日本)).*)
 ```
 
 有了以上规则，理论上你可以自己配置所有你想要方式
+
+## DNS / Fake-IP 配置
+
+### Clash 配置
+
+Clash 支持使用 `fake-ip` 模式来加速 DNS 解析。基础配置模板 `all_base.tpl` 中已预配置:
+
+```yaml
+dns:
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+    - '*.lan'
+    - '*.local'
+    - '*.smartcitybd.com'
+    - 'local.ptlogin2.qq.com'
+    # 在下方添加不需要走 fake-ip 的域名
+    # - '*.example.com'
+    # - '+.example.com'
+```
+
+如需添加域名到 fake-ip-filter,直接编辑仓库中的 `all_base.tpl` 文件即可。
+
+### Quantumult X 配置
+
+Quantumult X 不支持 fake-ip 模式,需要通过 DNS 规则来指定特定域名使用不同的 DNS 服务器。
+
+#### 方法一: 使用远程资源文件 (推荐)
+
+1. 在 Quantumult X 中打开 **配置 > 资源**
+2. 找到 **远程文件** 部分,点击 **添加**
+3. 添加以下 URL:
+   ```
+   https://raw.githubusercontent.com/你的用户名/你的仓库/master/QuanX_DNS_Rules.conf
+   ```
+4. 启用该远程文件即可
+
+#### 方法二: 手动添加 DNS 规则
+
+下载 `QuanX_DNS_Rules.conf` 文件,将其内容追加到你的 QX 配置文件末尾。
+
+#### DNS 规则示例
+
+```ini
+[dns-server]
+label=国内DNS, 223.5.5.5
+label=国外DNS, 8.8.8.8
+label=直连DNS, 119.29.29.29
+
+[dns-rule]
+; 局域网
+domain-suffix=*.lan, 国内DNS
+domain-suffix=*.local, 国内DNS
+
+; 游戏
+domain-suffix=*.mihoyo.com, 国内DNS
+domain-suffix=*.hoyoverse.com, 国内DNS
+domain-suffix=*.leagueoflegends.com, 国内DNS
+
+; 银行
+domain-suffix=*.icbc.com.cn, 直连DNS
+```
+
+详细配置说明请参考 [QuanX_DNS_Rules.conf](QuanX_DNS_Rules.conf) 文件。
