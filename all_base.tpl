@@ -206,6 +206,7 @@ geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://github.com/KOP-
 network_check_url=http://www.baidu.com/
 server_check_url=http://www.gstatic.com/generate_204
 resource_parser_url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
+dns_exclusion_list=*.lan,*.local,*.localdomain,*.smartcitybd.com,+.msftconnecttest.com,+.msftncsi.com,time.*.com,time.*.gov,time.*.org,geolocation.onedrive.com,+.office.com,+.office.net,+.office365.com,+.microsoft.com,+.windowsupdate.com,+.update.microsoft.com,*.apple.com,*.mzstatic.com,*.cdn-apple.com,*.taobao.com,*.alibaba.com,*.alicdn.com,*.tencent.com,*.qq.com,*.weixin.qq.com,*.wechat.com,*.wechat.com.cn,*.jd.com,*.360.cn,*.sohu.com,*.pinduoduo.com,*.bilibili.com,*.biliapi.net,*.biliapi.com,+.cn,geoip:cn
 
 [dns]
 ; DNS 服务器配置
