@@ -13,6 +13,9 @@
 ruleset=🏠 家庭网络,clash-ipcidr:https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/N1_ipcidr.yaml,no-resolve
 ruleset=💼 办公网络,clash-ipcidr:https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_ipcidr.yaml,no-resolve
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/zerotier.list,no-resolve
+ruleset=💼 办公网络-开发环境,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_domain_dev.list
+ruleset=💼 办公网络-测试环境,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_domain_beta.list
+ruleset=💼 办公网络-生产环境,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_domain_pro.list
 ruleset=💼 办公网络,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_domain.list
 ruleset=🔯 故障转移,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/github_domain.yaml
 ruleset=📹 EMBY,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/Emby.list
@@ -62,6 +65,9 @@ ruleset=🐟 漏网之鱼,[]FINAL
 
 ;设置分组标志位
 custom_proxy_group=🏠 家庭网络`select`[]🇨🇳 N1节点`[]DIRECT
+custom_proxy_group=💼 办公网络-开发环境`select`[]🇨🇳 N1节点`[]DIRECT
+custom_proxy_group=💼 办公网络-测试环境`select`[]🇨🇳 N1节点`[]DIRECT
+custom_proxy_group=💼 办公网络-生产环境`select`[]🇨🇳 N1节点`[]DIRECT
 custom_proxy_group=💼 办公网络`select`[]🇨🇳 N1节点`[]DIRECT
 custom_proxy_group=🇨🇳 N1节点`select`(N1|aliyun|local)
 custom_proxy_group=🚀 节点选择`select`[]♻️ 自动选择`[]🔯 故障转移`[]🔮 负载均衡`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]🚀 手动切换`[]DIRECT
