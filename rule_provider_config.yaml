@@ -12,6 +12,7 @@
 ;设置规则标志位
 ruleset=🏠 家庭网络,clash-ipcidr:https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/N1_ipcidr.yaml,no-resolve
 ruleset=💼 办公网络,clash-ipcidr:https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_ipcidr.yaml,no-resolve
+ruleset=💼 办公网络-EDU环境,clash-ipcidr:https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/edu_ipcidr.yaml,no-resolve
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/zerotier.list,no-resolve
 ruleset=💼 办公网络-开发环境,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_domain_dev.list
 ruleset=💼 办公网络-测试环境,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_domain_beta.list
@@ -68,8 +69,10 @@ custom_proxy_group=🏠 家庭网络`select`[]🇨🇳 N1节点`[]DIRECT
 custom_proxy_group=💼 办公网络-开发环境`select`[]🇨🇳 N1节点`[]DIRECT
 custom_proxy_group=💼 办公网络-测试环境`select`[]🇨🇳 N1节点`[]DIRECT
 custom_proxy_group=💼 办公网络-生产环境`select`[]🇨🇳 N1节点`[]DIRECT
+custom_proxy_group=💼 办公网络-EDU环境`select`[]💼 EDU节点`[]DIRECT
 custom_proxy_group=💼 办公网络`select`[]🇨🇳 N1节点`[]DIRECT
 custom_proxy_group=🇨🇳 N1节点`select`(N1|aliyun|local)
+custom_proxy_group=💼 EDU节点`select`(N1|aliyun|local)
 custom_proxy_group=🚀 节点选择`select`[]♻️ 自动选择`[]🔯 故障转移`[]🔮 负载均衡`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]🚀 手动切换`[]DIRECT
 custom_proxy_group=🚀 手动切换`select`.*
 custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`300,,50
