@@ -13,6 +13,7 @@
 ruleset=🏠 家庭网络,clash-ipcidr:https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/N1_ipcidr.yaml,no-resolve
 ruleset=💼 办公网络,clash-ipcidr:https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_ipcidr.yaml,no-resolve
 ruleset=💼 办公网络-EDU环境,clash-ipcidr:https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/edu_ipcidr.yaml,no-resolve
+ruleset=💼 办公网络-EDU环境,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/edu_domain.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/zerotier.list,no-resolve
 ruleset=💼 办公网络-开发环境,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_domain_dev.list
 ruleset=💼 办公网络-测试环境,https://raw.githubusercontent.com/init-object/ClashCustomRule/master/providers/coastal_domain_beta.list
