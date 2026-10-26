@@ -1,0 +1,25 @@
+payload:
+  # OpenAI Codex CLI
+  - PROCESS-NAME,codex
+  - PROCESS-NAME,Codex
+  # ChatGPT 桌面客户端
+  - PROCESS-NAME,ChatGPT
+  - PROCESS-NAME,chatgpt
+  # WorkBuddy
+  - PROCESS-NAME,WorkBuddy
+  - PROCESS-NAME,workbuddy
+  # Claude Code CLI / Claude 桌面客户端
+  - PROCESS-NAME,claude
+  - PROCESS-NAME,Claude
+  # Cursor 编辑器
+  - PROCESS-NAME,Cursor
+  - PROCESS-NAME,cursor
+  # Gemini CLI
+  - PROCESS-NAME,gemini
+  - PROCESS-NAME,Gemini
+  # GitHub Copilot
+  - PROCESS-NAME,copilot
+  - PROCESS-NAME,Copilot
+  # 其他常见 AI Agent 工具
+  - PROCESS-NAME,aider
+  - PROCESS-NAME,opencode
